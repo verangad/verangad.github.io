@@ -1,14 +1,19 @@
 <!DOCTYPE html>
 <html>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
 <style>
+
+ 
+
+
 
 body {
   background-color:black ;
 }
 
 h1 {
-  color: white;
+  color: black;
   position: absolute;
   left: 20px;
   font-family: Arial, Helvetica, sans-serif;
@@ -20,14 +25,25 @@ h1 {
   top: 0px;
   height: 75px;
   width: 100%;
-  background-color: #3c403d;
+  background-color: white;
+}
+
+img{
+  position: absolute
+}
+
+img.back{
+  opacity: 0.3;
+  left: 0px;
+  width: 100%;
+
 }
 
  
  
   
 .button {
-  background-color: #4CAF50; /* Green */
+
   position: absolute;
   
 
@@ -43,7 +59,7 @@ h1 {
   
 }
 
-.generalButton {
+button.generalButton {
   background-color: white; 
   top: 20px;
   right: 20px;
@@ -53,20 +69,103 @@ h1 {
   
 }
 
-.generalButton:hover {
+button.generalButton:hover {
   background-color: #4CAF50;
   color: white;
  
 }
 
-.homeButton {
-  background-color: white; 
+button.homeButton {
+  background-color: transparent;
+  top: 5px;
+  right: 10vw;
+  padding: 20px 50px;
+  color: black; 
+
+}
+
+button.aboutButton {
+  background-color: transparent;
   top: 5px;
   right: 100px;
   padding: 20px 50px;
   color: black; 
-  border: 2px solid #4CAF50;
-  background-image: url(https://i.imgur.com/6H4LLeI.png);
+
+}
+
+button.projectsButton {
+  background-color: transparent;
+  top: 5px;
+  right: 100px;
+  padding: 20px 50px;
+  color: black; 
+
+}
+
+button.infoButton {
+  background-color: transparent;
+  top: 5px;
+  right: 100px;
+  padding: 20px 50px;
+  color: black; 
+
+}
+
+button.dropdown {
+    display: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 600px) {
+ 
+  .button {
+    display: none;
+  }
+
+ .dropdown {
+  
+   color: black;
+   position: fixed;
+  
+   background-color: black;
+   padding: 25px;
+   right: 15px;
+   top: 15px;
+   
+ } 
+
+  .dropdown-content {
+   right: 2%;
+   top: 65px;
+   display: none;
+   position: fixed;
+   background-color: white;
+   min-width: 160px;
+   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+   padding: 12px 16px;
+   z-index: 1;
+ }
+
+ .dropdown:hover .dropdown-content {
+   display: block;
+   
+   
+ }
+
+ .dropdown:hover{
+  background-color: white;
+   border: 2px solid black;
+ }
+
 
 }
 
@@ -75,6 +174,7 @@ h1 {
   
   <body>
 
+    <img class="back" src="back.png" alt ="back" >
 
   <div class="rectangle">
 
@@ -84,7 +184,20 @@ h1 {
 
     <button class="button homeButton"> Home</button>
 
+
+    <div class="dropdown">
+      <span></span>
+      <div class="dropdown-content">
+        <p>Hello World!</p>
+      </div>
+    </div>
+
   </div>
+
+ 
+  
+
+
   
 
 </body>
