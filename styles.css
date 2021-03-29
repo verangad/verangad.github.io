@@ -1,0 +1,316 @@
+body {
+    background-color:black ;
+  }
+  
+  h1 {
+    color: black;
+    position: absolute;
+    top: 6px;
+    left: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
+  }
+  
+  .rectangle {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    height: 75px;
+    width: 100%;
+    background-color: white;
+  }
+  
+  img{
+  
+    position: absolute;
+  
+  }
+  
+  img.back{
+    opacity: 0.3;
+    left: 0px;
+    width: 100%;
+  
+  }
+
+  .transition-fade{
+    opacity: 1;
+    transition: 200ms;
+    transform: translateX(0);
+    transform-origin: left;
+
+  }
+
+  html.is-animating .transition-fade{
+
+    opacity: 1;
+    transform: translateX(100%);
+  }
+
+  html.is-leaving .transition-fade{
+
+    opacity: 0;
+    transform: translateX(0);
+  }
+  
+  
+  
+  
+  
+  
+   
+   
+    
+  .button {
+    appearance: button;
+    position: absolute;
+    
+  
+    border: none;
+    text-align: right;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    font-family: "Segoe UI";
+    font-weight: bold;
+    font-size: 1.8vw;
+    padding: 0px 20px;
+    outline: none;
+  
+  }
+  
+  
+  button.menuButton{
+  
+    background-color: transparent;
+    top: 0px;
+    width: 15vw;
+    height: 75px;
+    color: black; 
+  
+    background-repeat: no-repeat;
+    background-size: 50px;
+    background-position-y: 12px;
+  
+  }
+  
+  button.menuButton:hover{
+  
+  color: transparent;
+  background-color: black;
+  background-position-x: 50%;
+  
+  }
+  
+  button.menuButton:active{
+  
+  color: transparent;
+  background-color: white;
+  transition: 0.2s;
+  
+  
+  }
+  
+  
+  
+  .menuButton.homeButton {
+  
+    right: 50vw;
+    background-image: url("home.png");
+    
+  
+  }
+  
+  .menuButton.resumeButton {
+    
+    
+    right: 35vw;
+    background-image: url("resume.png");
+   
+  
+  
+  
+  }
+  
+  .menuButton.aboutButton {
+  
+    right: 20vw;
+    background-image: url("about.png");
+   
+    
+  
+  }
+  
+  .menuButton.projectsButton {
+  
+    right: 5vw;
+    background-image: url("code.png");
+    
+    
+  
+  }
+  
+  
+  
+  button.dropdown {
+      display: none;
+  }
+  
+  button.dropdown-content{
+    display: none;
+  }
+  
+  .dropdownbutton{
+    display: none;
+  }
+  
+  
+  .homeContent{
+    color: red;
+  
+  }
+  
+  .resumeContent{
+    color: red;
+   
+    
+  
+  
+  }
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  @media only screen and (max-width: 800px) {
+   
+    .menuButton {
+      display: none;
+    }
+  
+  
+   .dropdown {
+    
+     color: black;
+     position: fixed;
+     background-image: url("menu.png");
+     background-position: -7px;
+     background-color: black;
+     padding: 25px;
+     right: 15px;
+     top: 15px;
+     
+   } 
+  
+    .dropdown-content {
+     right: 2%;
+     top: 65px;
+     
+  
+     display: none;
+    position: fixed;
+    background-color: white;
+    width: 160px;
+    height: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  
+    z-index: 1;
+   }
+   
+  
+  
+   .dropdown:hover .dropdown-content {
+     display: block;
+     
+     
+   }
+  
+   .dropdown:hover{
+    background-color: white;
+     border: 2px solid black;
+   }
+  
+   .dropdownbutton{
+    position: absolute;
+  
+    border: none;
+    color: black;
+  
+    text-align: right;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    font-family: "Segoe UI";
+    font-weight: bold;
+  
+  
+    font-size: 20px;
+    padding: 0px 30px;
+    top: 0px;
+    left: 0px;
+    width: 160px;
+    height: 40px;
+  
+    outline: none;
+    background-image: url("home.png");
+    background-repeat: no-repeat;
+    background-size: 40px;
+    background-position-y: 0px;
+  
+   }
+   .dropdownbutton:hover{
+  
+    color: transparent;
+    background-color: black;
+    background-position-x: 50%;
+  
+    
+   
+    background-size: 40px;
+    background-position-y: 0px;
+  
+  
+   }
+  
+   .dropdownbutton.dropdownresume{
+    top: 40px;
+    background-image: url("resume.png");
+   }
+  
+   .dropdownbutton.dropdownabout{
+    top: 80px;
+    background-image: url("about.png");
+  
+   }
+  
+   .dropdownbutton.dropdownprojects{
+    top: 120px;
+  
+    background-image: url("code.png");
+    
+  
+   }
+  
+   
+  
+   
+  
+  
+  
+  }
