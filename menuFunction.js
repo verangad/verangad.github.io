@@ -11,6 +11,7 @@ function menuFunction(input) {
     }
     else if(input == 1){
       location.href="resume.html";
+      
     }
     else if(input == 2){
 
