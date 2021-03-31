@@ -2,72 +2,28 @@
 <html>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <link href="styles.css" rel="stylesheet">
+  <link href="new-styles.css" rel="stylesheet">
 
   
- 
-  
- 
-<style>
 
-
-
-</style>
-  
   <body>
 
-    <img class="back" src="back.png" alt ="back" >
-
-    <div class="rectangle">
-
+    <header>
       <h1>Dillan Veranga</h1>
-   
-      <nav>
-        <ul>
 
-          <button class="button menuButton homeButton" onclick="menuFunction(0)">Home</button>
-    
+      <nav> <!-- nav bar -->
+        <ul class="nav-buttons">
+          <li><img class="icons" src="home.png"> <a href="index.html">Home</a></li>
+          <li><a href="resume.html">Resume</a></li>
+          <li><a href="#">Projects</a></li>
+          <li><a href="#">About</a></li>
 
-          <button href="resume.html" class="button menuButton resumeButton" onclick="menuFunction(1)">Resume</button>
+        </ul>
 
-    
-
-          <button class="button menuButton projectsButton" onclick="menuFunction(2)">Projects</button>
-
-          <button class="button menuButton aboutButton" onclick="menuFunction(3)">About</button>
-
-      
-
-          <div class="dropdown">
-      
-      
-          <div class="dropdown-content">
-        
-        
-          <p>
-
-            <button class="dropdownbutton">Home</button>
-            <button class="dropdownbutton dropdownresume">Resume</button>
-            <button class="dropdownbutton dropdownabout">About</button>
-            <button class="dropdownbutton dropdownprojects">Projects</button>
-
-          </p>
-        </div>
-
-
-          </ul>
-        </nav>
-
-      
-    </div>
-
-    <div class="homeContent">
-     
-    </div>
-
+      </nav>
+    </header>
 
     
-  </div>
     
 
    
@@ -77,15 +33,11 @@
       <br>
       <br>
       <br>
-      <iframe src="test.pdf" width="99.6%" height="1000px">
+      <iframe class="resume-view" src="test.pdf" width="99.6%" height="1000px">
       </iframe>
     </div>
 
-    
-
-   
-    
-  </div>
+  
   
 </body>
 
