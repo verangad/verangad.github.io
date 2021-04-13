@@ -17,14 +17,14 @@ function projectPages(tab, clickedButton) {
 
   for (i = 0; i < tabButtons.length; i++) { //reset color of buttons
 
-    tabButtons[i].style.backgroundColor = "";
+    tabButtons[i].style.color = "";
 
   }
   
   //show the clicked tab's content
   document.getElementById(tab).style.display = "block";
   //set clicked button color
-  clickedButton.style.backgroundColor = "#777";
+  clickedButton.style.color = "yellow";
   
 }
 

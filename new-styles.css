@@ -76,6 +76,11 @@ footer{
     text-decoration: none;
 }
 
+.foot-links:hover{
+
+    color: yellow;
+    
+}
 
 /* Top nav bar */
 
@@ -171,7 +176,7 @@ footer{
 }
 
 .resume-button:hover {
-    background-color: #777;
+    background-color: #33383e;
     
 }
 
@@ -211,7 +216,7 @@ footer{
 }
 
 .project-button:hover {
-    background-color: #777;
+    background-color: #33383e;
     
 }
 

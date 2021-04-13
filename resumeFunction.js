@@ -15,14 +15,14 @@ function resumePages(tab, clickedButton) {
   
     for (i = 0; i < docButtons.length; i++) { //reset color of buttons
   
-      docButtons[i].style.backgroundColor = "";
+      docButtons[i].style.color = "";
   
     }
     
     //show the clicked tab's content
     document.getElementById(tab).style.display = "block";
     //set clicked button color
-    clickedButton.style.backgroundColor = "#777";
+    clickedButton.style.color = "yellow";
     
 }
   
