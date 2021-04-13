@@ -13,7 +13,7 @@
 
       <nav> <!-- nav bar -->
         <ul class="nav-buttons">
-          <li><img class="icons" src="home.png"> <a href="index.html">Home</a></li>
+          <li><a href="index.html">Home</a></li>
           <li><a href="resume.html">Resume</a></li>
           <li><a href="projects.html">Projects</a></li>
           <li><a href="about.html">About</a></li>
@@ -24,23 +24,58 @@
     </header>
 
     
-    
+
+    <div class="resume-tabs">
+
+      <button class="resume-button" id="default-resume" onclick="resumePages('resume-letter', this)">Resume</button>
+      <button class="resume-button" onclick="resumePages('cover-letter', this)">Cover Letter</button>
+
+    </div>
 
    
-    <div class="resumeContent">
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <iframe class="resume-view" src="test.pdf" width="99.6%" height="1000px">
-      </iframe>
-    </div>
+
+      <div id="resume-letter" class="resume-content">
+      
+
+        <iframe class="resume-view" src="test.pdf" width="99.6%" height="1000px">
+        </iframe>
+    
+          
+          
+    
+      </div>
+    
+      <div id="cover-letter" class="resume-content">
+    
+          
+        <iframe class="resume-view" src="test2.pdf" width="99.6%" height="1000px">
+        </iframe>
+         
+          
+    
+       </div>
+  
+  
+      </div>
+      
+
+      
+    
+
+  
+
+    <footer>
+      <ul class="foot-buttons">
+        <li> <a class="foot-links" href="https://github.com/verangad">GitHub</a></li>
+        <li><a class="foot-links" href="https://www.youtube.com/watch?v=kKg-aXVS1YI&ab_channel=DOVA-SYNDROMEYouTubeOfficial">Instagram</a></li>
+      </ul>
+    </footer>
+
 
   
   
 </body>
 
-<script src="menuFunction.js"></script>
+<script src="resumeFunction.js"></script>
 
 </html>
