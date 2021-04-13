@@ -35,6 +35,7 @@ header{
     
 }
 
+
 footer{
     
     color: white;
@@ -106,9 +107,11 @@ footer{
 .nav-buttons li a:hover{
     color: yellow;
    
-    
-
 }
+.nav-buttons li a:hover .mag-glass{
+    display: block;
+}
+
 
 .icons{
     height: 30px;
@@ -137,7 +140,7 @@ footer{
 .resume-view{
     position: relative;
     width: 50%;
-    left: 20%;
+    left: 25%;
 
     top: 10px;
     
@@ -156,7 +159,7 @@ footer{
 }
 
 .resume-button {
-    background-color: #555;
+    background-color: #1e2124;
     color: white;
     float: left;
     border: none;
@@ -181,11 +184,6 @@ footer{
 
 
 
-
-
-
-
-
 /* Projects page*/
 
 .project-tabs{
@@ -201,7 +199,7 @@ footer{
 }
 
 .project-button {
-    background-color: #555;
+    background-color: #1e2124;
     color: white;
     float: left;
     border: none;
