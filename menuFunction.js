@@ -11,6 +11,7 @@ function projectPages(tab, clickedButton) {
   
   for (i = 0; i < numTabs.length; i++) { //hide all content in all tabs
 
+    
     numTabs[i].style.display = "none";
 
   }
@@ -30,6 +31,11 @@ function projectPages(tab, clickedButton) {
 
 //default pages
 document.getElementById("default").click();
+
+
+window.addEventListener('scroll', () => {
+  document.body.style.setProperty('--scroll',window.pageYOffset / (document.body.offsetHeight - window.innerHeight));
+}, false);
 
 
 

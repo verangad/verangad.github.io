@@ -6,62 +6,239 @@
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
+  
   <link href="new-styles.css" rel="stylesheet"> 
+ <link href="test.css" rel="stylesheet"> 
 
+
+ 
+  
 
 </head>
   
   <body>
-    
-    
-    <header>
-      <h1>Dillan Veranga</h1>
+
+  <video autoplay muted loop id="myVideo">
+  <source src="0001-0250.mp4" type="video/mp4">
+  </video>
+
+
+  <div class="head-container">
+
+
+    <header id="xyz">
+      <h1><a href="javascript:toProject('homeContent')" style="color: white; text-decoration: none; font-size: 25px; position: relative; left: 10%;">Dillan Veranga</a></h1>
 
       <nav> <!-- nav bar -->
         <ul class="nav-buttons">
-          <li><a href="index.html">Home</a></li>
-          <li><a href="resume.html">Resume</a></li>
-          <li><a href="projects.html">Projects</a></li>
-          <li><a href="about.html">About</a></li>
 
+          <li><a href="javascript:toProject('aboutContent')">About</a></li>
+          <li><a href="javascript:toProject('resumeContent')">Resume</a></li>
+          <li><a href="javascript:toProject('projectsContent')">Projects</a></li>
+          
         </ul>
 
       </nav>
+      <div class="mobile-select">
+
+      
+        <img class="mobile-menu" src="menu.png" style="width: 30px; height: 30px;">
+        <div class="mobile-menucontent">
+          <a href="#">Link 1</a>
+          <a href="#">Link 2</a>
+          <a href="#">Link 3</a>
+        </div>
+
+
+
+      
     </header>
+  </div>
+    
 
+    
+    
 
+    <div class="content">
 
-    <div class="homeContent">
-      <img src="https://picsum.photos/1920/1080" style="display: block; opacity: 0.2; margin-left: auto; margin-right: auto; width: 80%;">
-      <div class="homeHeader">
+      <div class="particle particle-1"></div>
+      <div class="particle particle-2"></div>
+      <div class="particle particle-3"></div>
+      <div class="particle particle-4"></div>
+  
+
+      <div class="homeContent">
+        <!--<img src="https://picsum.photos/1920/1080" style="display: block; position: absolute; opacity: 0.2; left: 10%; margin-left: auto; margin-right: auto; width: 80%; height: 100%">-->
+        <div class="homeHeader">
+          <div class="headbox">
+            <h1 style="color: white; font-size: 80px;">Hello!</h1>
+          <p></p>
+          </div>
+
+          <div class="morebox">
+          <img src="https://picsum.photos/1920/1080" style="display: block; position: absolute; left: 0; width: 60%; height: 50%; border-radius: 15px;">
+
+            <div class="main-button">
+
+            
+            <button class="project-button menu-button" style="position: static; align-items: center" onclick="toProject('aboutContent', this)">More About Me</button>
+            </div>
+              
        
-        <h1>Hello! TEST???? FILL THIS IN</h1>
-        <button class="project-button" style="position: static; align-items: center" onclick="toProject()">Some cool stuff</button>
+            
+
+          </div>
+          <div class="projectbox">
+
+          <img src="https://picsum.photos/1920/1080" style="display: block; position: absolute; left: 0; width: 60%; height: 50%; border-radius: 15px;">
+
+            <div class="main-button">
+              <button class="project-button menu-button" style="position: static; align-items: center" onclick="toProject('projectsContent', this)">Some cool stuff</button>
+            </div>
+            
+
+          </div>
+          
+         
+          
+  
+        </div>
         
+  
+      </div>
+
+      <div class="aboutContent" id="abc">
+        
+    
+        <div class="languages">
+
+          
+
+          <ul class="langs">
+            <li>
+            <img src="https://picsum.photos/1920/1080" style="display: block; position: static; width: 10%; height: 20%; border-radius: 15px;">
+            <p>Java</p>
+            </li>
+            <li>
+          <p><img src="https://picsum.photos/1920/1080" style="display: block; width: 10%; height: 20%; border-radius: 15px;">Javascript</p>
+</li>
+          <li>
+          <p><img src="https://picsum.photos/1920/1080" style="display: block; width: 10%; height: 20%; border-radius: 15px;">HTML/CSS</p>
+          </li>
+          <li>
+          <p><img src="https://picsum.photos/1920/1080" style="display: block; position: static; width: 10%; height: 20%; border-radius: 15px;">C/C++</p>
+</li>
+          <li>
+          <p>C# and Unity</p>
+</li>
+          <li>
+          <p>Python</p>
+          </li>
+          </ul>
+          
+          
+        </div>
+        <div class="preview">
+          
+        </div>
+        
+  
+      </div>
+      </div>
+
+
+      <div class="resumeContent">
+
+      <div class="particleRes particle-1"></div>
+      <div class="particleRes particle-2"></div>
+      <div class="particleRes particle-3"></div>
+      <div class="particleRes particle-4"></div>
+
+        <div class="resume-tabs">
+
+          <button class="resume-button" id="default-resume" onclick="resumePages('resume-letter', this)">Resume</button>
+          <button class="resume-button" onclick="resumePages('cover-letter', this)">Cover Letter</button>
+    
+        </div>
+    
+       
+    
+          <div id="resume-letter" class="resume-content">
+          
+    
+            <iframe class="resume-view" src="docs/VERANGA, Dillan - Resume.pdf" width="99.6%" height="1000px">
+            </iframe>
+        
+              
+              
+        
+          </div>
+        
+          <div id="cover-letter" class="resume-content">
+        
+              
+            <iframe class="resume-view" src="test2.pdf" width="99.6%" height="1000px">
+            </iframe>
+             
+              
+        
+           </div>
+      
+      
+          </div>
 
       </div>
+
+      <div class="projectsContent">
+
+        <div class="project-tabs">
+
+          <button class="project-button" id="default" onclick="projectPages('Color Picker', this)">Color Picker</button>
+          <button class="project-button" onclick="projectPages('AmeBot', this)">AmeBot</button>
+    
+        </div>
+    
+        <div id="Color Picker" class="project-content">
+    
+          <h3>COLOR PCIK</h3>
+    
+          <a class="git-link" href="https://github.com/verangad/ColorWheelExtension">Check it out on GitHub</a>
+          
+    
+        </div>
+    
+        <div id="AmeBot" class="project-content">
+    
+          <h3>AMELIA WATSON</h3>
+    
+          <a class="git-link" href="https://github.com/verangad/amebot">Check it out on GitHub</a>
+          
+    
+        </div>
+
+        </div>
+        
       
+      <footer>
+        <ul class="foot-buttons">
+          <li> <a class="foot-links" href="https://github.com/verangad">GitHub</a></li>
+          <li><a class="foot-links" href="https://www.youtube.com/watch?v=kKg-aXVS1YI&ab_channel=DOVA-SYNDROMEYouTubeOfficial">Instagram</a></li>
+        </ul>
+      </footer>
 
     </div>
 
 
-
-
-    <footer>
-      <ul class="foot-buttons">
-        <li> <a class="foot-links" href="https://github.com/verangad">GitHub</a></li>
-        <li><a class="foot-links" href="https://www.youtube.com/watch?v=kKg-aXVS1YI&ab_channel=DOVA-SYNDROMEYouTubeOfficial">Instagram</a></li>
-      </ul>
-    </footer>
+  
 
 
 
-    
-  </div>
+   
   
 </body>
 
 <script src="menuFunction.js"></script>
+<script src="resumeFunction.js"></script>
 <script src="switchPage.js"></script>
 
 </html>

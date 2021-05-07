@@ -25,6 +25,7 @@ function resumePages(tab, clickedButton) {
     clickedButton.style.color = "yellow";
     
 }
+
   
   
 document.getElementById("default-resume").click();

@@ -1,6 +1,11 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@700&display=swap');
 
+html{
+
+    scroll-behavior: smooth;
+}
+
 *{
     box-sizing: border-box;
     font-family: "Noto Sans", sans-serif;
@@ -9,30 +14,44 @@
 
 body{
 
-    background-color: #424a52;
+    background-color: black;
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
     margin: 0;
-    height: 100%;
+    height: auto;
     
+    
+
+}
+
+#myVideo {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
 }
 
 
 
 
 header{
-    
-    
+
+    position: sticky;
     color: white;
     background-color: #1e2124;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0px 30px;
+    padding: 0px 10px;
+    height: 70px;
+    z-index: 5;
+    
+}
 
-    
-    
+.head-container{
+    z-index: 40;
 }
 
 
@@ -43,13 +62,87 @@ footer{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0px 30px;
     position: relative;
     
     bottom: 0px;
+    overflow: hidden;
 
    
 }
+
+
+
+@media screen and (max-width: 1200px) {
+
+    .homeHeader{
+
+        left: 10%;
+        width: 80%;
+
+    }
+
+
+}
+
+@media screen and (max-width: 800px) {
+
+    .nav-buttons {
+
+        display: none;
+
+    }
+
+    .mobile-select {
+
+        
+        position: relative;
+        display: inline-block;
+    }
+
+    .mobile-menucontent {
+        display: none;
+        position: absolute;
+        background-color: #f1f1f1;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 1;
+    }
+
+    .homeHeader{
+
+        left: 5%;
+        width: 90%;
+
+    }
+
+   
+
+
+    .mobile-menu:hover .mobile-menucontent{
+
+        display: block;
+
+    }
+
+    
+
+
+    
+
+
+}
+
+@media screen and (min-width: 800px) {
+
+    .mobile-select{
+
+        display: none;
+
+    }
+
+
+}
+
 
 
 
@@ -124,20 +217,155 @@ footer{
 }
 
 /* Home page */
-.homeContent{
-    position: relative;
-    text-align: center;
+
+@keyframes fade-in{
+
+    0% {opacity: 0;}
+
+    100% {opacity: 100;}
+}
+
+
+.content{
+
+    width: 100%;
+    z-index: 2;
+    overflow: hidden;
+    
     
 }
 
+
 .homeHeader{
 
-    position: absolute;
+    
+    display: grid;
+    width: 70%;
+    left: 15%;
+    grid-template-columns: auto auto;
+    grid-gap: 5%;
+    position: relative;
+    color: white;
+    transition: ease all 2s;
+    animation: fade-in ease 2s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    top: 5%;
+   
+}
+
+.homeContent{
+
+    height: 700px;
+    position: relative;
+    text-align: center;
+    
+    
+}
+
+
+.headbox{
+
+    grid-column-start: 1;
+    grid-column-end: span 2;
+    background-color: #1e2124;
+    border-radius: 15px;
+    
+    
+}
+
+.projectbox{
+
+    position: relative;
+    background-color: #1e2124;
+    border-radius: 15px;
+    height: 400px;
+    
+    
+}
+
+.morebox{
+
+    position: relative;
+    background-color: #1e2124;
+    border-radius: 15px;
+    
+    
+}
+
+
+
+.aboutContent{
+
+    
+    position: relative;
+    text-align: center;
+    overflow-x: hidden;
+    
+    
+}
+
+
+.languages{
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+
+    position: relative;
+    top: 15%;
+    width: 100%;
+    height:800px;
+    background-color: #1e2124;
     color: white;
 
-    top: 8px;
-    left: 25%;
+    animation: lang-anim-left 1s linear;
+    animation-play-state: paused;
+    animation-delay: calc(var(--scroll) * -1s);
+    
+    
+    
 }
+
+
+.preview{
+
+    position: relative;
+    top: 5%;
+    width: 100%;
+    height:800px;
+
+    background-color: white;
+    color: #1e2124;
+    animation: lang-anim-right 1s linear;
+    animation-play-state: paused;
+    animation-delay: calc(var(--scroll) * -1s);
+    
+}
+
+
+
+@keyframes lang-anim-left{
+
+    0%   {left: 100%;}
+    8%  {left: 75%;}
+    16%  {left: 50%;}
+    24%  {left: 25%;}
+    33% {left: 0;}
+}
+
+@keyframes lang-anim-right{
+
+    50%   {right: 100%;}
+    62%  {right: 75%;}
+    75%  {right: 50%;}
+    87%  {right: 25%;}
+    100% {right: 0;}
+}
+
+
+
+
 
 
 /* Resume page */
@@ -153,6 +381,7 @@ footer{
 
 .resume-tabs{
 
+    position: sticky;
     font-family: "Noto Sans", sans-serif;
     color: white;
     background-color: #1e2124;
@@ -184,7 +413,12 @@ footer{
     color: white;
     display: block;
     padding: 30px 20px;
-    height: 100%;
+    
+}
+
+.resumeContent{
+    overflow: hidden;
+    height: 1130px;
 }
 
 
@@ -193,6 +427,7 @@ footer{
 
 .project-tabs{
 
+    position: sticky;
     font-family: "Noto Sans", sans-serif;
     color: white;
     background-color: #1e2124;
@@ -204,7 +439,8 @@ footer{
 }
 
 .project-button {
-    background-color: #1e2124;
+    
+    background-color: transparent;
     color: white;
     float: left;
     border: none;
@@ -212,13 +448,34 @@ footer{
     cursor: pointer;
     padding: 14px 16px;
     font-size: 17px;
-    width: 50%;
+    width: 100%;
+    
 }
 
 .project-button:hover {
     background-color: #33383e;
     
 }
+
+.main-button{
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    width: 30%;
+    
+
+
+}
+
+.project-button.menu-button {
+    
+    color: white;
+    border: 2px solid white;
+    border-radius: 15px;
+    width: 100%;
+   
+}
+
 
 .project-content {
     color: white;
@@ -233,3 +490,13 @@ footer{
 
 
 }
+
+
+
+.langs{
+
+    
+    list-style: none;
+}
+
+
