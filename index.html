@@ -71,8 +71,8 @@
         <!--<img src="https://picsum.photos/1920/1080" style="display: block; position: absolute; opacity: 0.2; left: 10%; margin-left: auto; margin-right: auto; width: 80%; height: 100%">-->
         <div class="homeHeader">
           <div class="headbox">
-            <h1 style="color: white; font-size: 80px;">Hello!</h1>
-          <p></p>
+            <h1 style="position: relative; top: -20px; left: 10px; color: white; font-size: 40px; text-align: left;">Hello!</h1>
+            <p>I am a second year Computer Science student at the University of Manitoba</p>
           </div>
 
           <div class="morebox">
@@ -112,29 +112,53 @@
     
         <div class="languages">
 
-          
+        
+          <div class="lang-container">
+              <img class="lang-img" src="logos/java.png">
+              <h3 class="lang-header">Java</h3>
+          </div>
+            
+          <div class="lang-container">
+            <img class="lang-img" src="logos/js.png">
+            <h3 class="lang-header">Javascript</h3>
+          </div>
 
-          <ul class="langs">
-            <li>
-            <img src="https://picsum.photos/1920/1080" style="display: block; position: static; width: 10%; height: 20%; border-radius: 15px;">
-            <p>Java</p>
-            </li>
-            <li>
-          <p><img src="https://picsum.photos/1920/1080" style="display: block; width: 10%; height: 20%; border-radius: 15px;">Javascript</p>
-</li>
-          <li>
-          <p><img src="https://picsum.photos/1920/1080" style="display: block; width: 10%; height: 20%; border-radius: 15px;">HTML/CSS</p>
-          </li>
-          <li>
-          <p><img src="https://picsum.photos/1920/1080" style="display: block; position: static; width: 10%; height: 20%; border-radius: 15px;">C/C++</p>
-</li>
-          <li>
-          <p>C# and Unity</p>
-</li>
-          <li>
-          <p>Python</p>
-          </li>
-          </ul>
+          <div class="lang-container">
+            <img class="lang-img" src="logos/html.png">
+            <h3 class="lang-header">HTML</h3>
+          </div>
+
+          <div class="lang-container">
+            <img class="lang-img" src="logos/css.png">
+            <h3 class="lang-header">CSS</h3>
+          </div>
+
+          <div class="lang-container">
+            <img class="lang-img" src="logos/c.png">
+            <h3 class="lang-header">C</h3>
+          </div>
+   
+          <div class="lang-container">
+            <img class="lang-img" src="logos/cplusplus.png">
+            <h3 class="lang-header">C++</h3>
+          </div>
+
+          <div class="lang-container">
+            <img class="lang-img" src="logos/csharp.png">
+            <h3 class="lang-header">C#</h3>
+          </div>
+
+          <div class="lang-container">
+          <img class="lang-img" src="logos/py.png">
+            <h3 class="lang-header">Python</h3>
+          </div>
+
+          <div class="lang-container">
+          <img class="lang-img" src="logos/unity.png">
+            <h3 class="lang-header">Unity</h3>
+          </div>
+
+         
           
           
         </div>
@@ -190,33 +214,58 @@
       </div>
 
       <div class="projectsContent">
+      <div class="particleRes particle-1"></div>
+      <div class="particleRes particle-2"></div>
+      <div class="particleRes particle-3"></div>
+      <div class="particleRes particle-4"></div>
 
         <div class="project-tabs">
 
-          <button class="project-button" id="default" onclick="projectPages('Color Picker', this)">Color Picker</button>
+          
+          <div class="pro-but">
+            <img src="https://picsum.photos/1920/1080" style="width: 100%; height: 80%; border-radius: 15px;">
+            <button class="project-button" id="default" onclick="projectPages('Color Picker', this)">Color Picker</button>
+          </div>
+          <div class="pro-but">
+          <img src="https://picsum.photos/1920/1080" style="width: 100%; height: 80%; border-radius: 15px;">
           <button class="project-button" onclick="projectPages('AmeBot', this)">AmeBot</button>
-    
-        </div>
-    
-        <div id="Color Picker" class="project-content">
-    
-          <h3>COLOR PCIK</h3>
-    
-          <a class="git-link" href="https://github.com/verangad/ColorWheelExtension">Check it out on GitHub</a>
-          
-    
-        </div>
-    
-        <div id="AmeBot" class="project-content">
-    
-          <h3>AMELIA WATSON</h3>
-    
-          <a class="git-link" href="https://github.com/verangad/amebot">Check it out on GitHub</a>
-          
+           </div>
+
     
         </div>
 
+        <div class="show-project">
+
+        <h3> test </h3>
+
+        
+    
+          <div id="Color Picker" class="project-content">
+
+            <div class="type-lang">
+              <img class="lang-img lang-img-pro" src="logos/html.png">
+              <img class="lang-img lang-img-pro" src="logos/css.png">
+              <img class="lang-img lang-img-pro" src="logos/js.png">
+          
+            </div>
+    
+            <h3>COLOR PCIK</h3>
+    
+            <a class="git-link" href="https://github.com/verangad/ColorWheelExtension">Check it out on GitHub</a>
+          
+          </div>
+    
+          <div id="AmeBot" class="project-content">
+    
+            <h3>AMELIA WATSON</h3>
+    
+            <a class="git-link" href="https://github.com/verangad/amebot">Check it out on GitHub</a>
+        
+          </div>
+
         </div>
+
+      </div>
         
       
       <footer>
