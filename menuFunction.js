@@ -18,15 +18,6 @@ function projectPages(tab, clickedButton) {
     
     numTabs[i].style.display = "none";
 
-  //show the clicked tab's content
-    if(numTabs[i].id === tab){
-
-      document.getElementById(tab).style.display = "block";
-      numChild = slideshow[i].childElementCount;
-
-      startSlide(childElementCount);
-       
-    }
 
   }
 
@@ -37,7 +28,7 @@ function projectPages(tab, clickedButton) {
   }
   
 
-  
+  document.getElementById(tab).style.display = "block";
   //set clicked button color
   clickedButton.style.color = "yellow";
   

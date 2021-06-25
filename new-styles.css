@@ -348,6 +348,20 @@ video{
     
 }
 
+.contact-box{
+    position: relative;
+
+    top: 10%;
+    left: 5%;
+    color: white;
+
+    background-color: #1e2124;
+
+    width: 20%;
+    height: 80%;
+}
+
+
 
 
 @keyframes lang-anim-left{
@@ -536,6 +550,7 @@ video{
     display: none;
 }
 
+
 @media screen and (max-width: 1200px) {
 
     .homeHeader{
@@ -605,6 +620,9 @@ video{
     }
     
 }
+
+
+
 
 
 
