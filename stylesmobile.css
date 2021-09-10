@@ -1,0 +1,67 @@
+
+
+@media screen and (min-width: 800px) {
+
+
+    .nav-container{
+
+        display: block;
+
+    }
+
+
+
+}
+
+
+
+@media screen and (max-width: 800px) {
+
+    .front-logo{
+    
+        padding: 20px;
+        padding-bottom: 50px;
+        width: 100%;
+    
+    }
+
+    .nav-container{
+
+        display: none;
+
+    }
+
+    .front-img{
+        width: 200px;
+    }
+
+    
+    
+}
+
+@media screen and (max-width: 600px) {
+
+
+    .front-img{
+        width: 150px;
+    }
+
+    
+    
+}
+
+@media screen and (max-width: 400px) {
+
+
+    .front-img{
+        width: 100px;
+    }
+
+    
+    
+}
+
+
+
+
+

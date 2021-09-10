@@ -4,205 +4,113 @@
  
 <head>
 
+  
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  
-  
+   
   <link href="new-styles.css" rel="stylesheet"> 
- <link href="test.css" rel="stylesheet"> 
+  <link href="stylesmobile.css" rel="stylesheet"> 
+  <link href="headerstyles.css" rel="stylesheet">
+  <link href="footerstyles.css" rel="stylesheet">
+  <link href="test.css" rel="stylesheet"> 
 
+  
 
  
   
 
 </head>
   
-  <body>
- 
-  <video autoplay muted loop id="myVideo">
+<body>
+ <!--
+   <video autoplay muted loop id="myVideo">
   <source src="0001-0250.mp4" type="video/mp4">
   </video>
+-->
+  
  
 
+    <div class="head-container">
 
 
-  <div class="head-container">
-
-
-    <header id="xyz">
-      <h1><a href="javascript:toProject('homeContent')" style="color: white; text-decoration: none; font-size: 25px; position: relative; left: 10%;">Dillan Veranga</a></h1>
-
-      <nav> <!-- nav bar -->
-        <ul class="nav-buttons">
-
-          <li><a href="javascript:toProject('aboutContent')">About</a></li>
-          <li><a href="javascript:toProject('resumeContent')">Resume</a></li>
-          <li><a href="javascript:toProject('projectsContent')">Projects</a></li>
-          
-        </ul>
-
-      </nav>
-      <div class="mobile-select">
-
-      
-        <img class="mobile-menu" src="menu.png" style="width: 30px; height: 30px;">
-        <div class="mobile-menucontent">
-          <a href="#">Link 1</a>
-          <a href="#">Link 2</a>
-          <a href="#">Link 3</a>
+      <header id="xyz">
+        <div class="logo">
+          <h1>Dillan Veranga</h1>
         </div>
 
+        <div class="nav-container">
+          <nav> <!-- nav bar -->
+            <ul class="nav-buttons">
 
+              <li><a href="javascript:toProject('aboutContent')">About</a></li>
+              <li><a href="test.pdf" download>Resume</a></li>
+              <li><a href="javascript:toProject('projectsContent')">Projects</a></li>
+          
+            </ul>
 
-      
-    </header>
-  </div>
+          </nav>
+        </div>
     
 
-    
+      </header>
+    </div>
     
 
     <div class="content">
 
-      <div class="particle particle-1"></div>
-      <div class="particle particle-2"></div>
-      <div class="particle particle-3"></div>
-      <div class="particle particle-4"></div>
-  
+     <!--
 
-      <div class="homeContent">
-        <!--<img src="https://picsum.photos/1920/1080" style="display: block; position: absolute; opacity: 0.2; left: 10%; margin-left: auto; margin-right: auto; width: 80%; height: 100%">-->
-        <div class="homeHeader">
-          <div class="headbox">
-            <h1 style="position: relative; top: -20px; left: 10px; color: white; font-size: 40px; text-align: left;">Hello! I'm <span style="color: yellow;">Dillan Veranga</span></h1>
-            <p>A second year Computer Science student at the University of Manitoba</p>
-            <p>Front End Developer</p>
-          </div>
-
-          <div class="morebox">
-
-            <div class="img-slot" style="width: 60%; height: 100%;">
-              <img src="https://picsum.photos/1920/1080" style="display: block; width: 100%; height: 100%; border-radius: 15px;">
-            </div>
-
-            <div class="main-button">
-
-              <p>Find out more about my skills, interests and contact information</p>
-
-              <button class="project-button menu-button" style="position: static; align-items: center; bottom: 0px;" onclick="toProject('aboutContent', this)">More About Me</button>
-            </div>
-              
-       
-            
-
-          </div>
-          <div class="projectbox">
-            <div class="img-slot" style="width: 60%; height: 100%;">
-              <img src="https://picsum.photos/1920/1080" style="display: block; width: 100%; height: 100%; border-radius: 15px;">
-            </div>
-
-            <div class="main-button">
-
-              <p>Check out some of my programs</p>
-              <button class="project-button menu-button" style="position: static; align-items: center; bottom: 0px;" onclick="toProject('projectsContent', this)">Some cool stuff</button>
-            </div>
-            
-
-          </div>
-
-
-          <div class="scrolldown">
-
-          
-
-          <p class="arr-down" style="margin: 0 auto; text-align: center; font-size: 130%">
-              <br>
-              &nbsp&nbsp||&nbsp<br>
-              &nbsp&nbsp||&nbsp<br>
-              &nbsp&nbsp||&nbsp<br>
-              &nbsp\&nbsp||&nbsp/<br>
-              &nbsp\||/<br>
-              &nbsp&nbsp\/&nbsp</p>
-          </div>
-          
-  
-        </div>
+<div class="particle particle-1"></div>
+        <div class="particle particle-2"></div>
+        <div class="particle particle-3"></div>
+        <div class="particle particle-4"></div>
+     -->
         
-  
+
+
+      
+     
+
+      <div class="front-logo">
+      
+          <div class="logo-img">
+            <img src="placeholder.com-logo1.png" style="width: 60%; display: block; margin-left: auto; margin-right: auto">
+          </div>
+
+
       </div>
 
-      <div class="aboutContent" id="abc">
-        
-    
-        <div class="languages">
+      <div class="front-info">
 
-        
-          <div class="lang-container">
-              <img class="lang-img" src="logos/java.png">
-              <h3 class="lang-header">Java</h3>
-          </div>
-            
-          <div class="lang-container">
-            <img class="lang-img" src="logos/js.png">
-            <h3 class="lang-header">Javascript</h3>
-          </div>
-
-          <div class="lang-container">
-            <img class="lang-img" src="logos/html.png">
-            <h3 class="lang-header">HTML</h3>
-          </div>
-
-          <div class="lang-container">
-            <img class="lang-img" src="logos/css.png">
-            <h3 class="lang-header">CSS</h3>
-          </div>
-
-          <div class="lang-container">
-            <img class="lang-img" src="logos/c.png">
-            <h3 class="lang-header">C</h3>
-          </div>
-   
-          <div class="lang-container">
-            <img class="lang-img" src="logos/cplusplus.png">
-            <h3 class="lang-header">C++</h3>
-          </div>
-
-          <div class="lang-container">
-            <img class="lang-img" src="logos/csharp.png">
-            <h3 class="lang-header">C#</h3>
-          </div>
-
-          <div class="lang-container">
-          <img class="lang-img" src="logos/py.png">
-            <h3 class="lang-header">Python</h3>
-          </div>
-
-          <div class="lang-container">
-          <img class="lang-img" src="logos/unity.png">
-            <h3 class="lang-header">Unity</h3>
-          </div>
-
-         
-          
-          
+        <div class="front-img">
+          <img src="https://picsum.photos/250" style="width: 100%">
         </div>
-        <div class="preview">
+        <div class="front-img">
+          <img src="https://picsum.photos/250" style="width: 100%">
+        </div>
+        <div class="front-img">
+          <img src="https://picsum.photos/250" style="width: 100%">
+        </div>
 
+      </div>
+
+
+      <div class="aboutContent" id="abc">
+        <div class="preview">
           <div class="contact-box">
 
             <h2 style="position: relative; top: 5%;">Contact</h2>
  
             <form action=”mailto:verangad@myumanitoba.ca” method=”POST” enctype=”multipart/form-data” name=”ContactEmail”> 
             
-            <br>
+              <br>
             
-            <input type=”text” size=”19″ name=”Contact-Name”><br><br>
-            
-           
-            <textarea name=”Contact-Message” rows=”10″ cols=”80″>
-            </textarea>
-            <br>
-            <br> 
-            <input type=”send” value=Send> 
+              <input type=”text” size=”19″ name=”Contact-Name”><br><br>
+                   
+              <textarea name=”Contact-Message” rows=”10″ cols=”80″>
+              </textarea>
+              <br>
+              <br> 
+              <input type=”send” value=Send> 
             </form>
 
             <p>
@@ -211,127 +119,31 @@
             <br>
             Github:
             <br>
-
-
             </p>
 
           
-          </div>
-          
+          </div> 
         </div>
-        
-  
       </div>
-      </div>
-
-
-      <div class="resumeContent">
-
-      <div class="particleRes particle-1"></div>
-      <div class="particleRes particle-2"></div>
-      <div class="particleRes particle-3"></div>
-      <div class="particleRes particle-4"></div>
-
-        <div class="resume-tabs">
-
-          <button class="resume-button" id="default-resume" onclick="resumePages('resume-letter', this)">Resume</button>
-          <button class="resume-button" onclick="resumePages('cover-letter', this)">Cover Letter</button>
-    
-        </div>
-    
-       
-    
-          <div id="resume-letter" class="resume-content">
-          
-    
-            <iframe class="resume-view" src="docs/VERANGA, Dillan - Resume.pdf" width="99.6%" height="1000px">
-            </iframe>
-        
-              
-              
-        
-          </div>
-        
-          <div id="cover-letter" class="resume-content">
-        
-              
-            <iframe class="resume-view" src="test2.pdf" width="99.6%" height="1000px">
-            </iframe>
-             
-              
-        
-           </div>
-      
-      
-          </div>
-
-      </div>
-
-      <div class="projectsContent">
-      <div class="particleRes particle-1"></div>
-      <div class="particleRes particle-2"></div>
-      <div class="particleRes particle-3"></div>
-      <div class="particleRes particle-4"></div>
-
-        <div class="project-tabs">
-
-          
-          <div class="pro-but">
-            
-            <button class="project-button" id="default" onclick="projectPages('Color-Picker', this)">Color Picker</button>
-          </div>
-
-
-          <div class="pro-but">
-          
-          <button class="project-button" onclick="projectPages('AmeBot', this)">AmeBot</button>
-           </div>
+    </div>
 
     
-        </div>
 
-        <div class="show-project">
-
-
-    
-          <div id="Color-Picker" class="project-content">
-
-            <div class="type-lang">
-              <img class="lang-img lang-img-pro" src="logos/html.png">
-              <img class="lang-img lang-img-pro" src="logos/css.png">
-              <img class="lang-img lang-img-pro" src="logos/js.png">
-          
-            </div>
-    
-            <h3>Art Tool</h3>
-    
-            <a class="git-link" href="https://github.com/verangad/ColorWheelExtension">Check it out on GitHub</a>
-          
-          </div>
-    
-          <div id="AmeBot" class="project-content">
-    
-            <h3>AmeBot</h3>
-    
-            <a class="git-link" href="https://github.com/verangad/amebot">Check it out on GitHub</a>
-        
-          </div>
-
-        </div>
-
-      </div>
-        
-      
+    <div class="foot-container">
       <footer>
         <ul class="foot-buttons">
           <li> <a class="foot-links" href="https://github.com/verangad">GitHub</a></li>
           <li><a class="foot-links" href="https://www.youtube.com/watch?v=kKg-aXVS1YI&ab_channel=DOVA-SYNDROMEYouTubeOfficial">Instagram</a></li>
         </ul>
 
-         
       </footer>
 
     </div>
+
+  
+
+
+  
 
 
   

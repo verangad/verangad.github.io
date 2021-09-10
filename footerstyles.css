@@ -1,0 +1,49 @@
+footer{
+    
+    color: white;
+    background-color: #1e2124;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    z-index: 41;
+    bottom: 0;
+    overflow: hidden;
+    width: 100%;
+
+   
+}
+
+.foot-container{
+
+    bottom: 0vw;
+}
+
+
+.foot-buttons{
+    background-color: none;
+    list-style: none;
+    
+
+}
+
+.foot-buttons li {
+    background-color: none;
+    list-style: none;
+    display: inline-block;
+    padding: 0px 20px;
+    
+
+}
+
+.foot-links{
+
+    color: white;
+    text-decoration: none;
+}
+
+.foot-links:hover{
+
+    color: yellow;
+    
+}

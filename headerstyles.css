@@ -1,0 +1,66 @@
+header{
+
+    position: sticky;
+    color: white;
+    background-color: #1e2124;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 10px;
+    height: 70px;
+    z-index: 5;
+    width: 100%;
+    
+}
+
+
+.nav-container{
+
+   
+    
+    justify-content: flex-end;
+
+
+}
+
+
+.head-container{
+
+    z-index: 40;
+    line-height: 70px;
+}
+
+.nav-buttons{
+
+    background-color: none;
+    list-style: none;
+    
+
+
+}
+
+.nav-buttons li {
+    background-color: none;
+    list-style: none;
+    display: inline-block;
+    padding: 0px 20px;
+    
+    
+    
+}
+
+.nav-buttons li a{
+    transition: all 0.3s ease 0s;
+    text-decoration: none;
+    color: white;
+    color: white;
+
+}
+
+.nav-buttons li a:hover{
+    color: yellow;
+   
+}
+.nav-buttons li a:hover .mag-glass{
+    display: block;
+}
