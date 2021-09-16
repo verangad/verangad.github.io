@@ -4,7 +4,6 @@ footer{
     background-color: #1e2124;
     display: flex;
     justify-content: space-between;
-    align-items: center;
     position: fixed;
     z-index: 41;
     bottom: 0;
@@ -16,11 +15,20 @@ footer{
 
 .foot-container{
 
-    bottom: 0vw;
+    z-index: 40;
+    
+
+}
+
+
+.footnav-container{
+
+    justify-content: flex-end;
 }
 
 
 .foot-buttons{
+    
     background-color: none;
     list-style: none;
     
@@ -47,3 +55,5 @@ footer{
     color: yellow;
     
 }
+
+

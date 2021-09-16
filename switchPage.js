@@ -3,7 +3,7 @@ function toProject(toPage){
 
 
     let home = document.getElementsByClassName("homeContent");
-    let resume = document.getElementsByClassName("resumeContent");
+    let contact = document.getElementsByClassName("contactContent");
     let projects = document.getElementsByClassName("projectsContent");
     let about = document.getElementsByClassName("aboutContent");
     let particles = document.getElementsByClassName("content");
